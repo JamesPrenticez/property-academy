@@ -1,0 +1,299 @@
+/*---------- Variables ---------*/
+:root {
+  --green: green;
+  --royalblue: royalblue;
+  --lightWhite: #eee;
+  --offWhite: #e6e6e6;
+  --offGray: #999;
+  --offBlack: #262626;
+}
+
+/*---------- All ---------*/
+* {
+  margin: 0;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  font-family: "Exo 2", sans-serif;
+  line-height: 1;
+  font-size: 100%;
+  color: "white";
+}
+
+html,
+body {
+  background-color: var(--lightWhite);
+  overflow-x: hidden;
+  background-color: var(--offWhite);
+}
+
+/*---------- Header ---------*/
+.header {
+  height: 15vh;
+  background-color: var(--lightWhite);
+  border-bottom: 3px solid var(--royalblue);
+  z-index: 1;
+}
+
+/*---------- Title ---------*/
+.title {
+  width: 80vw;
+  height: 10vh;
+  text-align: left;
+  padding: 50px 0px 50px 0px;
+  margin: 0;
+  position: absolute;
+  z-index: 1;
+  margin-left: 15vw;
+  font-size: 3.33em;
+}
+
+/*---------- Logo ---------*/
+.logo {
+  height: 13vh;
+  line-height: 13vh;
+  vertical-align: middle;
+  width: 13vw;
+  position: absolute;
+  top: 0;
+  margin: 1vw;
+  cursor: pointer;
+  font-size: 3.33em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.navbar {
+  width: 100%;
+  height: 5vh;
+  overflow: auto;
+  margin-top: 10vh;
+  position: absolute;
+  z-index: 1;
+}
+
+.navbar ul {
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.navbar li {
+  float: right;
+}
+
+.navbar li a {
+  display: block;
+  color: var(--offBlack);
+  text-align: center;
+  font-size: 1.5em;
+  padding: 10px 15px 10px 0px;
+  text-decoration: none;
+}
+
+.navbar li :hover {
+  color: var(--royalblue);
+  cursor: pointer;
+}
+
+.navbar .active {
+  color: royalblue;
+}
+
+/* ---------- Footer --------- */
+.footer {
+  text-decoration: none;
+  width: 100%;
+  height: 200px;
+  background-color: "red";
+  display: inline-block;
+  text-align: center;
+  padding: 50px 0px 0px 0px;
+  z-index: 1;
+}
+
+/* ---------- Homepage --------- */
+.cover {
+  width: 100%;
+  height: 85vh;
+  margin-top: 15vh;
+  position: absolute;
+}
+
+.modal {
+  width: 100%;
+  height: 85vh;
+  background-color: black;
+  opacity: 0.3;
+  position: absolute;
+  margin-top: 15vh;
+  z-index: 2;
+}
+
+/* ---------- Timeline --------- */
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.timeline {
+  padding-left: 15vw; /* Same width as the sidebar + left position in px */
+  width: 100%;
+  max-width: 60rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 2rem;
+  padding-bottom: 4rem;
+  padding-left: 2rem;
+  background-image: linear-gradient(var(--offGray), var(--offGray));
+  background-size: 2px 100%;
+  background-position: 50% 1rem;
+  background-repeat: no-repeat;
+  font-size: 15px; /* Increased text to enable scrolling */
+  padding-top: 20vh;
+}
+@media (max-width: 40rem) {
+  .timeline {
+    background-position: 2rem 0;
+  }
+}
+.timeline .item {
+  position: relative;
+  display: block;
+  width: 50%;
+  float: left;
+  clear: both;
+  margin-top: -1rem;
+}
+@media (max-width: 40rem) {
+  .timeline .item {
+    width: 100%;
+    float: none;
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+}
+.timeline .item:before {
+  content: "";
+  position: absolute;
+  top: 0.3rem;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid var(--offGray);
+  border-radius: 50%;
+  background-color: var(--offWhite);
+}
+.timeline .item:hover:before {
+  background-color: var(--offGray);
+}
+.timeline .item:first-child {
+  margin-top: 0;
+}
+.timeline .item:nth-child(odd) {
+  float: right;
+  padding-left: 2rem;
+}
+.timeline .item:nth-child(odd):before {
+  left: -0.5rem;
+}
+.timeline .item:nth-child(even) {
+  padding-right: 2rem;
+}
+@media (max-width: 40rem) {
+  .timeline .item:nth-child(even) {
+    padding-right: 0;
+    padding-left: 2rem;
+  }
+}
+.timeline .item:nth-child(even):before {
+  right: -0.5rem;
+}
+@media (max-width: 40rem) {
+  .timeline .item:nth-child(even):before {
+    left: -0.5rem;
+  }
+}
+.timeline .item h2 {
+  display: block;
+  margin-bottom: 1rem;
+}
+.timeline .item:nth-child(even) h2 {
+  text-align: right;
+}
+@media (max-width: 40rem) {
+  .timeline .item:nth-child(even) h2 {
+    text-align: left;
+  }
+}
+
+#table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#table td,
+#table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#table tr:hover {
+  background-color: #ddd;
+}
+
+#table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4caf50;
+  color: white;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.btn {
+  position: relative;
+  top: 40vh;
+  left: 40vw;
+  height: 5vh;
+  width: 20vw;
+  z-index: 4;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: DeepSkyBlue;
+}
+
+.btn-dark {
+  color: #fff;
+  background-color: var(--royalblue);
+  border-color: var(--lightWhite);
+}
