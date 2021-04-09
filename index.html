@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet" type="text/css">
+    <script src="popup.js"></script>
     <title>66 Innes Rd</title>
 </head>
 
@@ -26,8 +27,7 @@
             <li><a href="contact.html"><i class="fa fa-fw fa-envelope"  aria-hidden="true"></i>Contact</a></li>
             <li><a href="about.html"><i class="fa fa-fw fa-user"></i>About</a></li>
             <li><a href="property.html"><i class="fa fa-fw fa-home"></i>Property</a></li>
-            <li><a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
-            <li>
+            <li><a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a></li>
         </ul>
     </div>
   </div>
@@ -35,9 +35,8 @@
     <div class='main'>
           <img class='cover' src='img/cover.jpeg'></img>
           
-          <div class='modal'></div>
-          <button type="button" class="btn btn-dark">Dark</button>
-          
+          <div id ='modal' class='modal'></div>
+          <button type="button" class="btn btn-dark" onclick="openpop()">Dark</button>
         </div>
       </div>
     </div>    
@@ -51,20 +50,20 @@
 
 </body>
 <script>
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
+// // Automatic Slideshow - change image every 4 seconds
+// var myIndex = 0;
+// carousel();
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
-}
+// function carousel() {
+//   var i;
+//   var x = document.getElementsByClassName("mySlides");
+//   for (i = 0; i < x.length; i++) {
+//     x[i].style.display = "none";  
+//   }
+//   myIndex++;
+//   if (myIndex > x.length) {myIndex = 1}    
+//   x[myIndex-1].style.display = "block";  
+//   setTimeout(carousel, 4000);    
+// }
 </script>
 </html>
