@@ -1,0 +1,271 @@
+@media only screen and (min-width: 280px) {
+  .newsletterButton {
+    width: 80vw;
+    height: 15vh;
+    position: absolute;
+    left: 10vw;
+    top: 80vh;
+    font-size: 4em;
+  }
+  .container {
+    width: 40vw;
+    height: 35vh;
+    margin-top: 10vh;
+    align-content: center;
+    /* background-color: yellow; */
+    background-color: transparent;
+  }
+  .thumb {
+    width: 35vw;
+    height: 35vh;
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 3px;
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0) inset;
+    transition: 1s transform linear;
+    transform-origin: left;
+    cursor: pointer;
+  }
+  .perspective {
+    position: relative;
+    display: inline;
+    float: left;
+    height: 35vh;
+    width: 35vw;
+    margin-left: -3vw;
+    -webkit-perspective: 450;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  .gold {
+    margin-top: 5vh;
+    margin-left: 5vw;
+    display: inline-flex;
+    height: 22vh;
+    font-family: "Bodoni Moda", serif;
+    font-weight: 400;
+    font-size: 16vw;
+    text-transform: uppercase;
+    line-height: 16vw;
+    text-align: left;
+    vertical-align: middle;
+    background: linear-gradient(
+      90deg,
+      rgba(186, 148, 62, 1) 0%,
+      rgba(236, 172, 32, 1) 20%,
+      rgba(186, 148, 62, 1) 39%,
+      rgba(249, 244, 180, 1) 50%,
+      rgba(186, 148, 62, 1) 60%,
+      rgba(236, 172, 32, 1) 80%,
+      rgba(186, 148, 62, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite;
+    background-size: 200%;
+    background-position: left;
+  }
+  @keyframes shine {
+    to {
+      background-position: right;
+    }
+  }
+}
+@media only screen and (min-width: 420px) {
+  .container {
+    margin: 0 auto;
+    width: 20vw;
+    height: 40vh;
+    align-content: center;
+    /* background-color: blue; */
+    background-color: transparent;
+  }
+  .thumb {
+    width: 20vw;
+    height: 40vh;
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 3px;
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0) inset;
+    transition: 1s transform linear;
+    transform-origin: left;
+    cursor: pointer;
+  }
+  .perspective {
+    position: relative;
+    display: inline;
+    float: left;
+    height: 40vh;
+    width: 20vw;
+    margin: 20px;
+    margin-left: 0px;
+    -webkit-perspective: 450;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  .gold {
+    margin-top: 5vh;
+    margin-left: 5vw;
+    display: inline-flex;
+    height: 20vh;
+    font-family: "Bodoni Moda", serif;
+    font-weight: 400;
+    font-size: 8vw;
+    text-transform: uppercase;
+    line-height: 18vw;
+    text-align: left;
+    vertical-align: middle;
+    background: linear-gradient(
+      90deg,
+      rgba(186, 148, 62, 1) 0%,
+      rgba(236, 172, 32, 1) 20%,
+      rgba(186, 148, 62, 1) 39%,
+      rgba(249, 244, 180, 1) 50%,
+      rgba(186, 148, 62, 1) 60%,
+      rgba(236, 172, 32, 1) 80%,
+      rgba(186, 148, 62, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite;
+    background-size: 200%;
+    background-position: left;
+  }
+  @keyframes shine {
+    to {
+      background-position: right;
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    margin: 0 auto;
+    width: 20vw;
+    height: 40vh;
+    align-content: center;
+    /* background-color: red; */
+    background-color: transparent;
+  }
+  .thumb {
+    width: 20vw;
+    height: 40vh;
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 3px;
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0) inset;
+    transition: 1s transform linear;
+    transform-origin: left;
+    cursor: pointer;
+  }
+  .perspective {
+    position: relative;
+    display: inline;
+    float: left;
+    height: 40vh;
+    width: 20vw;
+    margin: 20px;
+    margin-left: 0px;
+    -webkit-perspective: 450;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  .gold {
+    margin-top: 5vh;
+    margin-left: 5vw;
+    display: inline-flex;
+    height: 20vh;
+    font-family: "Bodoni Moda", serif;
+    font-weight: 400;
+    font-size: 8vw;
+    text-transform: uppercase;
+    line-height: 18vw;
+    text-align: left;
+    vertical-align: middle;
+    background: linear-gradient(
+      90deg,
+      rgba(186, 148, 62, 1) 0%,
+      rgba(236, 172, 32, 1) 20%,
+      rgba(186, 148, 62, 1) 39%,
+      rgba(249, 244, 180, 1) 50%,
+      rgba(186, 148, 62, 1) 60%,
+      rgba(236, 172, 32, 1) 80%,
+      rgba(186, 148, 62, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite;
+    background-size: 200%;
+    background-position: left;
+  }
+  @keyframes shine {
+    to {
+      background-position: right;
+    }
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    margin: 0 auto;
+    width: 20vw;
+    height: 40vh;
+    align-content: center;
+    /* background-color: green; */
+    background-color: transparent;
+  }
+  .thumb {
+    width: 20vw;
+    height: 40vh;
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 3px;
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0) inset;
+    transition: 1s transform linear;
+    transform-origin: left;
+    cursor: pointer;
+  }
+  .perspective {
+    position: relative;
+    display: inline;
+    float: left;
+    height: 40vh;
+    width: 20vw;
+    margin: 20px;
+    margin-left: 0px;
+    -webkit-perspective: 400;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  .gold {
+    margin-top: 5vh;
+    margin-left: 5vw;
+    display: inline-flex;
+    height: 25vh;
+    font-family: "Bodoni Moda", serif;
+    font-weight: 400;
+    font-size: 8vw;
+    text-transform: uppercase;
+    line-height: 10vw;
+    text-align: left;
+    vertical-align: middle;
+    background: linear-gradient(
+      90deg,
+      rgba(186, 148, 62, 1) 0%,
+      rgba(236, 172, 32, 1) 20%,
+      rgba(186, 148, 62, 1) 39%,
+      rgba(249, 244, 180, 1) 50%,
+      rgba(186, 148, 62, 1) 60%,
+      rgba(236, 172, 32, 1) 80%,
+      rgba(186, 148, 62, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite;
+    background-size: 200%;
+    background-position: left;
+  }
+  @keyframes shine {
+    to {
+      background-position: right;
+    }
+  }
+}

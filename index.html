@@ -4,66 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale= 1.0">
-    <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/.ico" href="img/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="mediaquery.css" rel="stylesheet" type="text/css">
+    <script src="jquery-3.5.1.min.js"></script>
     <script src="popup.js"></script>
-    <title>66 Innes Rd</title>
+    <script src="opendoor.js"></script>
+    <title>Property Academy</title>
 </head>
 
 <body>
-    <!----------- Header ---------->
-    <div class='header'>
-        <!----------- Logo ---------->
-        <div class="logo"><i class="fa fa-university fa-6x"></i></div>
-        <div class="title">The Property Academy</div>
-    
-
     <!----------- Navbar ---------->
-    <div class="navbar">
-        <ul>
+    <!-- <div class="navbar"> -->
+        <!----------- Logo ---------->
+        <!-- <div class="logo"><i class="fa fa-university fa"></i></div> -->
+        <!----------- Title ---------->
+        <!-- <div class="title">The Property Academy</div> -->
+        <!----------- Nav Items ---------->
+        <!-- <ul>
             <li><a href="contact.html"><i class="fa fa-fw fa-envelope"  aria-hidden="true"></i>Contact</a></li>
             <li><a href="about.html"><i class="fa fa-fw fa-user"></i>About</a></li>
             <li><a href="property.html"><i class="fa fa-fw fa-home"></i>Property</a></li>
             <li><a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a></li>
         </ul>
-    </div>
-  </div>
+    </div> -->
 
     <div class='main'>
-          <img class='cover' src='img/cover.jpeg'></img>
-          
-          <div id ='modal' class='modal'></div>
-          <button type="button" class="btn btn-dark" onclick="openpop()">Dark</button>
+          <div id ='first' class='first'>
+            <div class="gold">Property Academy</div>
+            <div id='container' class='container'>
+                <div id='perspective' class="perspective" onclick="openDoor(this)">
+                    <div class="thumb">
+                </div>
+            </div>
+            <button id='newsletterButton' class="newsletterButton" type="button" onclick="openpop()">Get Updates About Our Launch!</button>
+          </div>
+          </div>
+          <div id ='second' class='second'>
+
+          </div>
         </div>
       </div>
     </div>    
 
     <!----------- Footer ---------->
-    <div class='footer'>JamesPrenticez&trade; All rights reserved 2020.
+    <div class='footer'>All rights reserved 2021.
         <br><br>
-        <a href="https://github.com/JamesPrenticez" class="footerIcon"><i class="fa fa-fw fa-github fa-4x"></i></a>
-        <a href="https://www.linkedin.com/in/jamesprenticez" class="footerIcon"><i class="fa fa-fw fa-linkedin fa-4x"></i></a>
+        <a href="#" class="footerIcon"><i class="fa fa-fw fa-facebook fa-2x" style='color: blue'></i></a>
+        <a href="#" class="footerIcon"><i class="fa fa-fw fa-youtube fa-2x" style='color: red'></i></a>
+        <a href="https://www.linkedin.com/in/jamesprenticez" class="footerIcon"><i class="fa fa-fw fa-linkedin fa-2x" style='color: navy'></i></a>
     </div>
 
 </body>
-<script>
-// // Automatic Slideshow - change image every 4 seconds
-// var myIndex = 0;
-// carousel();
-
-// function carousel() {
-//   var i;
-//   var x = document.getElementsByClassName("mySlides");
-//   for (i = 0; i < x.length; i++) {
-//     x[i].style.display = "none";  
-//   }
-//   myIndex++;
-//   if (myIndex > x.length) {myIndex = 1}    
-//   x[myIndex-1].style.display = "block";  
-//   setTimeout(carousel, 4000);    
-// }
-</script>
 </html>
