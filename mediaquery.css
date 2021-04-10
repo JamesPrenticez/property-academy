@@ -1,23 +1,23 @@
 @media only screen and (min-width: 280px) {
   .newsletterButton {
     width: 80vw;
-    height: 15vh;
+    height: 12vh;
     position: absolute;
     left: 10vw;
-    top: 80vh;
+    top: 75vh;
     font-size: 4em;
   }
   .container {
-    width: 40vw;
-    height: 35vh;
-    margin-top: 10vh;
+    width: 50vw;
+    height: 40vh;
+    margin-top: 5vh;
     align-content: center;
     /* background-color: yellow; */
     background-color: transparent;
   }
   .thumb {
-    width: 35vw;
-    height: 35vh;
+    width: 50vw;
+    height: 40vh;
     position: absolute;
     box-sizing: border-box;
     border-radius: 3px;
@@ -30,15 +30,15 @@
     position: relative;
     display: inline;
     float: left;
-    height: 35vh;
-    width: 35vw;
-    margin-left: -3vw;
+    height: 50vh;
+    width: 40vw;
+    margin-left: 3vw;
     -webkit-perspective: 450;
     border-radius: 3px;
     box-sizing: border-box;
   }
   .gold {
-    margin-top: 5vh;
+    margin-top: 8vh;
     margin-left: 5vw;
     display: inline-flex;
     height: 22vh;

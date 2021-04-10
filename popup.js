@@ -8,8 +8,6 @@ function openpop(){
     modal=document.getElementById('container')
     modal.style.width = '80vw'
 
-
-
     form = document.createElement('form')
     form.name='popup'
     form.method='POST'
@@ -18,17 +16,22 @@ function openpop(){
     fname=document.createElement('input')
     fname.type='TEXT'
     fname.name='fname'
-    fname.placeholder='John'
+    fname.placeholder='first name'
     
     lname=document.createElement('input')
     lname.type='TEXT'
     lname.name='lname'
-    lname.placeholder='Doe'
+    lname.placeholder='last name'
 
     email=document.createElement('input')
     email.type='TEXT'
     email.name='email'
-    email.placeholder='JohnDoe@example.com'
+    email.placeholder='email'
+    
+    cellphone=document.createElement('input')
+    cellphone.type='TEXT'
+    cellphone.name='cellphone'
+    cellphone.placeholder='phone number'
 
     city=document.createElement('input')
     city.id='city'
@@ -36,10 +39,10 @@ function openpop(){
     city.name='city'
     city.placeholder='Auckland'
 
-    subject=document.createElement('input')
-    subject.type='TEXT'
-    subject.name='subject'
-    subject.placeholder='Hello, I would like to find out more about...'
+    letter=document.createElement('input')
+    letter.type='TEXT'
+    letter.name='letter'
+    letter.placeholder='Hello, I would like to find out more about...'
     
     submit=document.createElement('input')
     submit.type='SUBMIT'
@@ -49,8 +52,9 @@ function openpop(){
     form.appendChild(fname)
     form.appendChild(lname)
     form.appendChild(email)
+    form.appendChild(cellphone)
     form.appendChild(city)
-    form.appendChild(subject)
+    form.appendChild(letter)
     form.appendChild(submit)
     modal.appendChild(form)
     }
